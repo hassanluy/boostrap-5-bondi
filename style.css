@@ -1,0 +1,146 @@
+:root{
+    --dark-color:#19283F;
+    --light-color:#A8B9C0;
+    --sky-color:#00C7C0;
+    --yellow-color:#FFC400;
+    --green-color:#33d1cc;
+    --section-color: #eff7fa;
+}
+body{
+    font-family: 'roboto',serif;
+    box-sizing: border-box;
+}
+.dark-color{
+    background-color: var(--dark-color);
+}
+.main-title{
+    position:relative;
+}
+.main-title::after{
+    content: "";
+    height: 2px;
+    width: 120px;
+    position: absolute;
+    border: 1px solid var(--green-color);
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* navbar section */
+.navbar .navbar-nav .nav-item a{
+    color: white;
+}
+.fa-magnifying-glass{
+    color: white;
+}
+.search{
+    border-left: 1px solid var(--green-color);
+}
+.search i{
+    color: var(--green-color);
+}
+.navbar .navbar-nav .nav-item a:active,
+.navbar .navbar-nav .nav-item a:focus,
+.navbar .navbar-nav .nav-item a:hover{
+    color: var(--green-color);
+}
+.navbar .navbar-toggler i{
+    color: white;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+/* landing page */
+.landing{
+    background-color: var(--dark-color);
+    min-height: calc(100vh - 72px);
+}
+/* landing page ending */
+/* features section */
+.icon-holder{
+    height: 200px;
+}
+.icon-holder i{
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+.icon-holder .number{
+    color: var(--section-color);
+    font-size: 12rem;
+}
+.icon-holder .icon{
+    color: var(--green-color);
+}
+/* project section */
+.projects{
+background-color: var(--section-color);
+}
+.card{
+    overflow: hidden;
+    padding: 5px;
+}
+.project::before{
+    content:attr(data-work);
+    font-size: 1.6rem;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: rgba(0, 255, 0, 0.5);
+    display:flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-110%);
+    transition: .7s;
+    color: white;
+}
+.project:hover::before{
+    transform: translateX(0);
+}
+
+/* team section */
+.team {
+    background-color: var(--section-color);
+}
+.team h5{
+    background-color: var(--green-color)
+}
+.team h1{
+    color: var(--yellow-color);
+}
+/* end team section */
+
+/* start work section  */
+.work{
+    background-color: var(--dark-color)
+}
+
+/* blog section */
+
+/* end blog section */
+
+/* subs section */
+.subs{
+    background-color: var(--yellow-color);
+}
+.subs input::placeholder{
+    color: white;
+}
+/* end subs section */
+
+/* footer section */
+
+footer{
+    background-color: var(--dark-color);
+}
+footer span{
+    color: var(--yellow-color);
+}
+/* end footer section */
+
+
+
+
+
+
+
